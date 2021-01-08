@@ -1,38 +1,109 @@
-.App {
+body {
+  background-color:#246D9A;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* left: 50%; */
+  /* top: 50%; */
+  width: 400px;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.mainCircle {
+  background-color: white;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  /* position: relative; */
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallerCircle1 {
+  top: 50%;
+  /* left: 50%; */
+  /* margin: -200px; */
+  width: 200px;
+  height: 200px;
+  /* position: absolute; */
+  border-radius: 50%;
+}
+
+.smallerCircle2 {
+  background-color: #246D9A;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* margin: 0 0; */
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+
+.sp-pie {
+  width: 400px;
+  height: 400px;
+}
+
+.sp-pie {
+  transform: rotate(-87deg);
+  stroke-width: 3;
+  fill: transparent;
+}
+
+.sp-pie-slice-1 {
+  stroke: #C42F2F;
+  stroke-dasharray: 11.5 1
+}
+
+.sp-pie-slice-3 {
+  stroke:#6A8798;
+  stroke-dasharray: 0, 50, 11.5, 1, 11.5, 1;
+}
+
+.sp-pie-slice-2 {
+  stroke: #B9C6CE;
+  stroke-dasharray: 11.5, 1, 11.5, 1, 11.5, 1, 11.5, 51;
+}
+
+
+.sp-pie-2 {
+  width: 400px;
+  height: 400px;
+}
+
+.sp-pie-2 {
+  transform: rotate(-87deg);
+  stroke-width: 3;
+  fill: transparent;
+}
+
+.sp-pie-2-slice-1 {
+  stroke: #C42F2F;
+  stroke-dasharray: 11.5 1
+}
+
+.sp-pie-2-slice-2 {
+  stroke:#6A8798;
+  stroke-dasharray: 0, 50, 11.5, 1, 11.5, 1;
+}
+
+.smallerCircle3 {
+  background-color: yellow;
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
 }

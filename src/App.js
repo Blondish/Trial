@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <div className="mainCircle"></div>
+        <div className="smallerCircle2"></div>
+
+      </div>
+      <div className="smallerCircle1">
+        <svg viewBox="0 0 64 64" className="sp-pie">
+          <circle className="sp-pie-slice-1" cx="50%" cy="50%" r="25%" />
+          <circle className="sp-pie-slice-2" cx="50%" cy="50%" r="25%" />
+          <circle className="sp-pie-slice-3" cx="50%" cy="50%" r="25%" />
+        </svg>
+        <div className="smallerCircle3"></div>
+      </div>
+
+    </>
   );
 }
 
