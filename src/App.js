@@ -1,6 +1,27 @@
 import './App.css';
+import CircularTest from './CircularTest';
+import magnifier from "./assets/Magnifier.svg"
+import visit from "./assets/Visit Arrow.svg"
+
+
 
 function App() {
+
+  // function circularText(txt, radius) {
+  //   txt = txt.split("");
+
+  //   var deg = 150 / txt.length,
+  //     origin = 289
+  //   let textResult;
+
+  //   txt.forEach((ea) => {
+  //     ea = `<p style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+  //     textResult += ea;
+  //     origin += deg;
+  //   });
+  //   return textResult;
+  // }
+  // const text = circularText("MyText", 100)
   return (
     <>
       <div className="container">
@@ -16,20 +37,23 @@ function App() {
         </svg>
 
       </div>
-      <div class="wrap">
-        <div class="wrap-in">
-          <div class="rw">
-            <div class="inline push green" id='3' ></div>
-
+      <div className="wrap">
+        <div className="wrap-in">
+          <div className="rw">
+            <div className="inline push green" id='3' ></div>
           </div>
-          <div class="rw">
-            <div class="b-l inline push yellow" id='1'></div>
-            <div class="b-r inline push blue" id='0'></div>
+          <div className="rw">
+            <div className="b-l inline push yellow" id='1'></div>
+            <div className="b-r inline push blue" id='0'></div>
           </div>
         </div>
-        <div class="center"></div>
+        <div className="center"></div>
       </div>
-
+      <div className="container">
+        <div className="circTxt" id="test" ><CircularTest text="Circle Name" arc={150} radius={83} /></div>
+      </div>
+      <img className="magnifier" src={magnifier}></img>
+      <img className="visit" src={visit}></img>
     </>
   );
 }
