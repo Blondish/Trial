@@ -1,7 +1,9 @@
+
 body {
   background-color:#246D9A;
   width: 100%;
   height: 100%;
+  font-family: monospace
 }
 
 .container {
@@ -11,52 +13,43 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  /* left: 50%; */
-  /* top: 50%; */
   width: 400px;
   height: 400px;
 }
 
 .mainCircle {
-  background-color: white;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
   top: 50%;
   left: 50%;
   width: 228px;
   height: 228px;
-  /* position: relative; */
   border-radius: 50%;
 }
 
 .smallerCircle1 {
   top: 50%;
-  /* left: 50%; */
-  /* margin: -200px; */
   width: 200px;
   height: 200px;
-  /* position: absolute; */
   border-radius: 50%;
 }
 
+    /* Blue Circle */
+
+
 .smallerCircle2 {
   background-color: #246D9A;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* margin: 0 0; */
   width: 170px;
   height: 170px;
   position: absolute;
   border-radius: 50%;
 }
 
+    /* Pie Circle */
 
 
 .sp-pie {
   width: 400px;
   height: 400px;
-}
-
-.sp-pie {
   transform: rotate(-87deg);
   stroke-width: 2px;
   fill: transparent;
@@ -64,7 +57,7 @@ body {
 
 .sp-pie-slice-1 {
   stroke: #C42F2F;
-  stroke-dasharray: 11.5 1
+  stroke-dasharray: 0 75 11.5 1 11.5 1
 }
 
 .sp-pie-slice-3 {
@@ -77,76 +70,22 @@ body {
   stroke-dasharray: 11.5, 1, 11.5, 1, 11.5, 1, 11.5, 51;
 }
 
-
-.sp-pie-2 {
-  width: 400px;
-  height: 400px;
-}
-
-.sp-pie-2 {
-  transform: rotate(-87deg);
-  stroke-width: 3;
-  fill: transparent;
-}
-
-.sp-pie-2-slice-1 {
-  stroke: #C42F2F;
-  stroke-dasharray: 11.5 1
-}
-
-.sp-pie-2-slice-2 {
-  stroke:#6A8798;
-  stroke-dasharray: 0, 50, 11.5, 1, 11.5, 1;
-}
-
-.smallerCircle3 {
-  background-color: yellow;
-  opacity: 0.5;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  border-radius: 50%;
-}
+    /*Internal Circle */
 
 
-.inline{
+.shared{
   display: inline-block;
-}
-
-.push{
-  position  : relative;
+  position: relative;
   width: 80px;
   height: 80px;
   border: 4px solid #246D9A;
 }
 
-
-.push-bottom-right{
-  border-right: 2px solid #246D9A
-}
-.push-bottom-left{
-  border-left: 2px solid #246D9A
-}
-
 .rw{
   margin-bottom:-9px;
-  
 }
 
-.b-r{
-  border-bottom-right-radius : 100%;
-}
-
-.b-l{
-  border-bottom-left-radius : 100%;
-}
-
-
-.t-r{
-  border-top-right-radius : 100%;
-} 
-
-.green{
+.top{
   background-color : white;
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
@@ -154,22 +93,26 @@ body {
   width: 166px;
   height: 86px;
   z-index: 1;
+  top: 2px;
 }
 
-.yellow{
-  background-color : white;
-opacity: 0.3;
+.bottom-left{
+  background-color : #6599B8;
   border-right: 3px solid #246D9A;
   z-index: 1;
+  border-bottom-left-radius : 100%;
 }
 
-.blue{
-  background-color : white;
-  opacity: 0.3;
+.bottom-right{
+  background-color : #6599B8;
   border-left: 3px solid #246D9A;
   z-index: 1;
+  border-bottom-right-radius : 100%;
 
 }
+
+    /* Circle Text */
+
 
 .wrap{
   width: 174px;
@@ -177,9 +120,8 @@ opacity: 0.3;
     border-radius: 100%;
     position: relative;
     text-align: center;
-    margin: -160px 113px;
     background-color: #246D9A;
-    top: 10vh;  
+    margin: 27px 27px 
 }
 
 .wrap-in{
@@ -200,12 +142,16 @@ opacity: 0.3;
     background-color: #246D9A;
     border: 4px solid #246D9A;
 }
+
+
+    /* Circle Text */
+
+
 div.circTxt {
-  /*allows for centering*/
   display: inline-block;
-  /*adjust as needed*/
-  margin-bottom: 269px;
+  top: 11px;
   color: whitesmoke;
+  position: absolute;
 }
 
 div.circTxt span {
@@ -214,6 +160,9 @@ div.circTxt span {
   position: absolute;
 
 }
+
+    /* Icons*/
+
 
  .magnifier {
   position: absolute;
