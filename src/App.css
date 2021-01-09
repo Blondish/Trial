@@ -161,6 +161,10 @@ div.circTxt span {
 
 }
 
+.circTxt {
+  display: flex
+}
+
     /* Icons*/
 
 

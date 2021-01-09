@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import './App.css';
 import CircularText from './CircularText';
 import magnifier from "./assets/Magnifier.svg"
@@ -6,12 +8,19 @@ import visit from "./assets/VisitArrow.svg"
 
 
 function App() {
+  const [text, setText] = useState("new")
+  const handleChange = (e) => {
+    setText(e.target.value)
+    console.log(text)
+  }
+
   return (
     <>
+      <div><input type="text" value={text} onChange={handleChange} /></div>
       <div className="container">
         <div className="mainCircle">
           <div className="wrap">
-            <div className="circTxt"><CircularText text="Circle Name" arc={150} radius={80} /></div>
+            <div className="circTxt" ><CircularText text={text} arc={150} radius={80} /></div>
             <div className="wrap-in">
               <div className="rw">
                 <div className="shared top"></div>
@@ -25,7 +34,6 @@ function App() {
           </div>
         </div>
 
-        {/* <div className="smallerCircle2"></div> */}
       </div>
       <div className="smallerCircle1">
         <svg viewBox="0 0 64 64" className="sp-pie">
