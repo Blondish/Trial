@@ -1,0 +1,14 @@
+
+div.circTxt {
+    display: inline-block;
+    top: 11px;
+    color: whitesmoke;
+    position: absolute;
+  }
+  
+  div.circTxt span {
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+  
+  }

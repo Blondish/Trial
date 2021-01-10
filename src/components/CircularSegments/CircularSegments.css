@@ -1,0 +1,39 @@
+.smallerCircle1 {
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .sp-pie {
+    width: 400px;
+    height: 400px;
+    transform: rotate(-87deg);
+    stroke-width: 2px;
+    fill: transparent;
+  }
+  
+  .sp-pie-red {
+    stroke: #C42F2F;
+    /* stroke-dasharray: 0 75 11.5 1 11.5 1 */
+  
+  }
+  
+      /* Red piece dots */
+  
+  .sp-pie-red-dot {
+    stroke-linecap: round;
+    stroke-width: 3px;
+    
+  }
+  
+  .sp-pie-blue {
+    stroke:#6A8798;
+    /* stroke-dasharray: 0, 50, 11.5, 1, 11.5, 1; */
+  }
+  
+  .sp-pie-gray {
+    stroke: #B9C6CE;
+    /* stroke-dasharray: 11.5, 1, 11.5, 1, 11.5, 1, 11.5, 51; */
+  }
+  

@@ -1,17 +1,16 @@
 import { useState } from "react"
-
 import './App.css';
-import CircularText from './CircularText';
+import CircularText from './components/CircularText/CircularText';
+import CircularSegments from "./components/CircularSegments/CircularSegments"
 import magnifier from "./assets/Magnifier.svg"
 import visit from "./assets/VisitArrow.svg"
 
-
-
 function App() {
-  const [text, setText] = useState("new")
+  const [text, setText] = useState("Circle Name")
   const handleChange = (e) => {
     setText(e.target.value)
     console.log(text)
+
   }
 
   return (
@@ -35,14 +34,7 @@ function App() {
         </div>
 
       </div>
-      <div className="smallerCircle1">
-        <svg viewBox="0 0 64 64" className="sp-pie">
-          <circle className="sp-pie-slice-1" cx="50%" cy="50%" r="25%" />
-          <circle className="sp-pie-slice-2" cx="50%" cy="50%" r="25%" />
-          <circle className="sp-pie-slice-3" cx="50%" cy="50%" r="25%" />
-        </svg>
-
-      </div>
+      <CircularSegments />
 
 
     </>

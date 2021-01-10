@@ -1,4 +1,5 @@
 import React from "react"
+import "./CircularText.css"
 
 const CircularText = ({ text, arc, radius }) => {
     const characters = text.split('');
