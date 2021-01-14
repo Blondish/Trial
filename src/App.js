@@ -5,21 +5,24 @@ import CircularSegments from "./components/CircularSegments/CircularSegments"
 import magnifier from "./assets/Magnifier.svg"
 import visit from "./assets/VisitArrow.svg"
 
-function App() {
+const App = () => {
   const [text, setText] = useState("Circle Name")
+  const maxCar = 12
+
   const handleChange = (e) => {
     setText(e.target.value)
-    console.log(text)
 
   }
 
+
+
   return (
     <>
-      <div><input type="text" value={text} onChange={handleChange} /></div>
+      <div><input type="text" maxlength={maxCar} value={text} onChange={handleChange} /></div>
       <div className="container">
         <div className="mainCircle">
           <div className="wrap">
-            <div className="circTxt" ><CircularText text={text} arc={150} radius={80} /></div>
+            <div className="circTxt" ><CircularText maxCar={maxCar} text={text} arc={150} radius={80} /></div>
             <div className="wrap-in">
               <div className="rw">
                 <div className="shared top"></div>

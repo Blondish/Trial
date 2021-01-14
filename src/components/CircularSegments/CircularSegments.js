@@ -10,7 +10,7 @@ export default function CircularSegments2() {
         let result = "", tail = 1, lenght = segmentLenght();
 
         if (numElements <= 0) { return "0 100"; }
-        if (startOffset > 0) { result += "0 " + startOffset + " "; }
+        if (startOffset > 0) { result += "0 " + startOffset + " " }
         if (endOffset > 0) { tail += endOffset; }
 
         for (var i = 1; i <= numElements; i++) {
@@ -33,7 +33,7 @@ export default function CircularSegments2() {
     function segmentLenght() {
         return (100 / (red + blue + gray)) - 1;
     }
-    function setOffset(skipSegments) {
+    function setOffset(skipSegments) { // calculates the sections
         return (((skipSegments) * segmentLenght()) + skipSegments)
     }
     function setOffsetDot() {
